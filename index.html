@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Gato</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<style>
+    .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: brown;
+    }
+       .modal-body img {
+            max-width: 100%; /* Asegurarse de que la imagen sea responsiva */
+            height: auto;
+        }
+        .modal-body {
+            text-align: center; /* Centrar el texto */
+        }
+</style>
+<body>
+    <h1>Juego de Gato</h1>
+    <div id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center center-button">
+                <button id="downloadButton" style="display:none;" class="button">!!!Este es tu premio felicidades !!!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="Video/Regalo.jpg" class=" modal-body img " alt="Ejemplo de Imagen">
+            <h1 class="modal-body">Mi amor de todos los futuros posibles yo siempre eligiere el que tu estes a mi lado</h1>
+        </div>
+    </div>
+
+    <script src="gato.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+--
+
